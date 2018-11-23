@@ -13,7 +13,7 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('!w')) {
+if (message.content.startsWith('!wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("dnd")
     message.channel.send(`تم تغير الواتشنق الى ** ${argresult} \ ** `)
